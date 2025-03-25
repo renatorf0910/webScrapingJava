@@ -17,6 +17,7 @@ public class App
         Dotenv dotenv = Dotenv.load();
         String url = dotenv.get("URL_GOV");
         String outputDir = "downloads/";
+        
         try {
             Files.createDirectories(Paths.get(outputDir));
             Document doc = Jsoup.connect(url).get();
