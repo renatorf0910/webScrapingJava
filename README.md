@@ -52,41 +52,16 @@ Before running the project, you will need to have **Java** and **Maven** install
 
 ### How to Run
 
-1. Clone the repository or download the source code.
-2. Open the terminal (or command prompt on Windows) and navigate to the project folder.
-3. Run the following command to compile the project:
+1. Run the following command to compile the project:
 
     ```bash
     mvn clean install
     ```
 
-4. After a successful build, run the program with the command:
+2. After a successful build, run the program with the command:
 
     ```bash
     mvn exec:java -Dexec.mainClass="com.scraping.App"
     ```
 
-5. The program will download the PDF files found on the page and compress them into a ZIP file.
-
-### Notes
-
-- The URL used for scraping is the ANS page: [https://www.gov.br/ans/pt-br/acesso-a-informacao/participacao-da-sociedade/atualizacao-do-rol-de-procedimentos](https://www.gov.br/ans/pt-br/acesso-a-informacao/participacao-da-sociedade/atualizacao-do-rol-de-procedimentos).
-- The PDF files will be downloaded to the `downloads/` directory.
-- After downloading, all PDFs will be compressed into a ZIP file named `compact_pdf.zip`.
-
----
-
-### How to Contribute
-
-1. Fork the repository.
-2. Create a branch for your feature (`git checkout -b my-feature`).
-3. Make your changes.
-4. Commit your changes (`git commit -am 'Adding new feature'`).
-5. Push to your branch (`git push origin my-feature`).
-6. Create a Pull Request.
-
----
-
-### License
-
-This project is licensed under the [MIT License](LICENSE).
+3. The program will download the PDF files found on the page and compress them into a ZIP file.
