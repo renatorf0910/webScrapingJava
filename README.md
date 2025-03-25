@@ -51,17 +51,22 @@ Before running the project, you will need to have **Java** and **Maven** install
 2. Install **Maven**: Download [Maven](https://maven.apache.org/download.cgi) and configure the environment variables `JAVA_HOME` and `MAVEN_HOME`.
 
 ### How to Run
+1. Unzip .env
+    # 1.1 Linux
+    ```
+        unzip env.zip
+    ```
 
-1. Run the following command to compile the project:
+2. Run the following command to compile the project:
 
     ```bash
     mvn clean install
     ```
 
-2. After a successful build, run the program with the command:
+3. After a successful build, run the program with the command:
 
     ```bash
     mvn exec:java -Dexec.mainClass="com.scraping.App"
     ```
 
-3. The program will download the PDF files found on the page and compress them into a ZIP file.
+4. The program will download the PDF files found on the page and compress them into a ZIP file.
